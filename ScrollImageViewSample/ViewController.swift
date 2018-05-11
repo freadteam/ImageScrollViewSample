@@ -59,6 +59,7 @@ class ViewController: UIViewController {
                 //表示するときの形式（AspectFitとか）
                 showIamgeView.contentMode = UIViewContentMode.scaleAspectFit
                 showIamgeView.backgroundColor = UIColor.clear
+                showIamgeView.clipsToBounds = true
                 showIamgeView.image = UIImage(named: imageNameArray[i])
                 
                 self.scrollView.addSubview(showIamgeView)
